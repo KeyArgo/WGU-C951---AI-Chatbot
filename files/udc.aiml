@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <pattern>start</pattern>
+        <template>Hello! I am an IT career bot. To get started please select from the options below: 
+            <button>
+                <text>Get advice based around interest.</text>
+                <postback>interests</postback>
+            </button>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>hello</pattern>
+        <template>Hello! I am an IT career bot. To get started please select from the options below: 
+            <button>
+                <text>Get advice based around interest.</text>
+                <postback>interests</postback>
+            </button>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>hi</pattern>
+        <template>Hello! I am an IT career bot. To get started please select from the options below: 
+            <button>
+                <text>Get advice based around interest.</text>
+                <postback>interests</postback>
+            </button>    
+        </template>
+    </category>
+   
+    
+    <category>
+        <pattern>itquestion</pattern>
+        <template>Do you like coding?
+        <br></br><br></br>
+            <button>
+                <text>Yes</text>
+                <postback>codingquestion</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>nextquestion</postback>
+            </button>
+        </template>
+    </category>
+
+        <category>
+        <pattern>developer</pattern>
+        <template>You should consider being a Front, Backend or Database Developer.
+        <br></br><br></br>
+            <button>
+                <text>Restart Bot</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Exit</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+
+     <category>
+        <pattern>networkingquestion</pattern>
+        <template> Do you prefer working with routers and switches, or securing computer networks from bad actors?
+            <button>
+                <text>Working with routers and switches</text>
+                <postback>networking</postback>
+            </button>
+            <button>
+                <text>I want to protect networks</text>
+                <postback>cybersecurity</postback>
+            </button>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>networking</pattern>
+        <template> You should consider being a Network Engineer or Administrator.
+        <br></br><br></br>
+            <button>
+                <text>Restart Bot</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Exit</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>cybersecurity</pattern>
+        <template> You should consider being a Cyber Security Analyst.
+        <br></br><br></br>
+            <button>
+                <text>Restart Bot</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Exit</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>it</pattern>
+        <template> You should consider being an IT Technician or System Administrator.
+        <br></br><br></br>
+            <button>
+                <text>Restart Bot</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Exit</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    
+     <category>
+        <pattern>interests</pattern>
+        <template>To get to know you and your interests better, I will ask you a few questions.
+        <br></br><br></br>
+        Do you enjoy coding?
+            <button>
+                <text>yes</text>
+                <postback>codingquestion</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>nextquestion</postback>
+            </button>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>codingquestion</pattern>
+        <template>Would you prefer a job where you code all day, occasionally or not at all?
+        <br></br><br></br>
+            <button>
+                <text>All Day</text>
+                <postback>developer</postback>
+            </button>
+            <button>
+                <text>Ocassionally</text>
+                <postback>nextquestion</postback>
+            </button>
+            <button>
+                <text>Not all all</text>
+                <postback>nextquestion</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>management</pattern>
+        <template> You should consider being an IT Director or Program Manager.
+        <br></br><br></br>
+            <button>
+                <text>Restart Bot</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Exit</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion</pattern>
+        <template> Do you enjoy working with routers and switches? 
+            <button>
+                <text>yes</text>
+                <postback>networkingquestion</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>nextquestion2</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion2</pattern>
+        <template> Do you think of yourself as a leader or a team member?
+            <button>
+                <text>Leader</text>
+                <postback>management</postback>
+            </button>
+            <button>
+                <text>Team Member</text>
+                <postback>nextquestion3</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion3</pattern>
+        <template> Do you enjoy helping people with their IT problems?
+            <button>
+                <text>Yes</text>
+                <postback>it</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>nextquestion4</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion4</pattern>
+        <template> You should reconsider your degree path.  Computer Science might be wrong for you.  Thank you for using the WGU IT Advice Bot.  Come back anytime!
+        </template>
+    </category>
+
+</aiml>
+
