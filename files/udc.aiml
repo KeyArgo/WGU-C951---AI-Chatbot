@@ -3,34 +3,51 @@
     
     <category>
         <pattern>start</pattern>
-        <template>Hello! I am an IT career bot. To get started please select from the options below: 
+        <template>Hello! I am a Computer Science career bot. Would you like help determing which career to pursue based off your personal interests?
             <button>
-                <text>Get advice based around interest.</text>
+                <text>Yes</text>
                 <postback>interests</postback>
-            </button>    
+            </button>
+            <button>
+                <text>No, I'd like to exit chat</text>
+                <postback>exit</postback>
+            </button>  
         </template>
     </category>
     
     <category>
         <pattern>hello</pattern>
-        <template>Hello! I am an IT career bot. To get started please select from the options below: 
+        <template>Hello! I am a Computer Science career bot. Would you like help determing which career to pursue based off your personal interests?
             <button>
-                <text>Get advice based around interest.</text>
+                <text>Yes</text>
                 <postback>interests</postback>
-            </button>    
+            </button>
+            <button>
+                <text>No, I'd like to exit chat</text>
+                <postback>exit</postback>
+            </button>  
         </template>
     </category>
     
     <category>
         <pattern>hi</pattern>
-        <template>Hello! I am an IT career bot. To get started please select from the options below: 
+        <template>Hello! I am a Computer Science career bot. Would you like help determing which career to pursue based off your personal interests?
             <button>
-                <text>Get advice based around interest.</text>
+                <text>Yes</text>
                 <postback>interests</postback>
-            </button>    
+            </button>
+            <button>
+                <text>No, I'd like to exit chat</text>
+                <postback>exit</postback>
+            </button>  
         </template>
     </category>
    
+    <category>
+        <pattern>exit</pattern>
+        <template>Thank you for stopping by!
+        </template>
+    </category>
     
     <category>
         <pattern>itquestion</pattern>
@@ -217,9 +234,16 @@
     
     <category>
         <pattern>nextquestion4</pattern>
-        <template> You should reconsider your degree path.  Computer Science might be wrong for you.  Thank you for using the WGU IT Advice Bot.  Come back anytime!
+        <template> You should reconsider your career path outside of information technology.  Computer Science though generally used for IT and science related fields is a very ambidextrous degree.  Consider career paths in public service, Math, teaching or get creative.  Thank you for using the WGU IT Advice Bot.  Come back anytime!
+            <button>
+                <text>Restart Bot</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Exit</text>
+                <postback>exit</postback>
+            </button>      
         </template>
     </category>
 
 </aiml>
-
